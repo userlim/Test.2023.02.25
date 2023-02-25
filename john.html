@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John_WICK</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        html{
+            background-image: url(jw1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header{
+            margin: 2% 0 0 5%;
+        }
+        .header_div{
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            position: relative;
+        }
+        #header_logo{
+            width: 70px;
+            display: inline-block;
+        }
+        #jogn_logo{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+        #header_menu{
+            margin: 0 0 0 6%;
+            width: 280px;
+            position: absolute;
+        }
+        #header_menu ul{
+            margin: 10px 0 0 0;
+        }
+        #header_menu ul li{
+            display: inline-block;
+            margin: 0 10px 0 0;
+            letter-spacing: 0.1em;
+        }
+        #header_menu ul li:hover{
+            color: rgb(187, 17, 17); 
+            transition-property: color;
+            transition-timing-function: ease-in;
+            transition-duration: 0.3s;
+        }
+        #header_right_menu{
+            float: right;
+            width: 50px;
+            margin: 0 2% 0 0;
+        }
+        main{
+            padding: 5% 0 0 160px;
+        }
+        #main_contents{
+            width: 90%;
+            height: 40%;
+            position: relative;
+            display: inline-block;
+        }
+        #main_logo{
+            width: 500px;
+            height: 100px;
+        }
+        #main_ul{
+            list-style: none;
+            width: 800px;
+            height: 50px;
+            margin: 50px 0 0 0;
+        }
+        #main_ul li{
+            display: inline-block;
+            width: 250px;
+            margin: 0  0 0;
+        }
+        #trailer{
+            position: absolute;
+            display: inline-block;
+            width: 100px;
+            height: 70px;
+            margin: 200px 0 0 0;
+        }
+        #trailer p{
+            transform:rotate(270deg);
+        }
+        #trailer img{
+            position: relative;
+            animation: right_left 0.6s infinite alternate;
+        }
+        @keyframes right_left{
+            0% {transform:translateX(0)}
+            100% {transform:translateX(25px)}
+        }
+        /* 키프레임 이름 = 애니메이션 이름 */
+        .main_bottom{
+            display: inline-block;
+            border: 1px solid black;
+            margin: 40px 50px 0 0;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 50px;
+            width: 200px;
+            height:30px;
+            
+        }
+        .main_bottom div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer_box{
+            width: 1000px;
+            height: 70px;
+            margin: 3% 0 0 5%;  
+        }
+        #footer_box img{
+            width: 40px;
+            height: 40px;
+        }
+        strong{
+            display: inline-block;
+            margin: 0 12px 0 0;
+            color: white;
+        }
+        .sns{
+            width: 40px;
+            height: 40px;
+            margin: 0 50px 0 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header_logo" class="header_div">
+            <img id="jogn_logo" src="johnwicklogo.png" alt="Jogn_logo">
+        </div>
+        <div id="header_menu" class="header_div">
+            <ul>
+                <li style="color:rgb(187, 17, 17);">HOME</li>
+                <li>CHARACTER</li>
+                <li>GALLERY</li>
+            </ul>
+        </div>
+        <div id="header_right_menu" class="header_div">
+            <img src="tale.png" alt="오른쪽 메뉴 바">
+        </div>
+    </header>
+    <main>
+        <div id="main_contents" class="main_box">
+            <img id="main_logo" src="johnwicktitle.png" alt="main_logo">
+            <h1 style="margin: 25px 0 25px 0;">CHAPTER1 - JOHN WICK</h1>
+            <p style="margin: 0 0 20px 0">
+                I shouldn't have touched him. Revenge against enemies who chose the
+                wrong person!John Wick, a killer<br> called a legend, retires from the
+                world of crime by meeting his beloved woman and getting married.<br>
+                Happiness is also briefly delivered as a gift to his wife before she
+                dies. Then one day, unidentified men rush<br>into his house...</p>
+            <ul id="main_ul">
+                <li><strong>Release</strong>2015, January 21</li>
+                <li><strong>Director</strong>Chad Stahelski</li>
+                <li><strong>Genre</strong>Action, Thriller</li>
+            </ul>
+            <div class="main_bottom"><div>WATCH</div></div>
+            <div class="main_bottom"><div>REAN MORE</div></div>
+        </div>
+        <div id="trailer" class="main_box">
+            <p style="display:inline-block;">TRAILER</p>
+            <img src="bar.png" alt="바" style="display:inline-block;">
+
+        </div>
+    </main>
+    <footer>
+        <div id="footer_box">
+            <img src="footer-facebook.png" class="sns" alt="facebook">  
+            <img src="footer-youtube.png" class="sns" alt="youtube">
+            <img src="footer-twitter.png" class="sns" alt="twitter">
+        </div>
+    </footer>
+</body>
+</html>
